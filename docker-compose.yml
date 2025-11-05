@@ -3,14 +3,13 @@ version: '3.8'
 services:
   playwright-service:
     image: ghcr.io/jcvallecruz/playwright:latest
-    # build: .  # Descomentar si quieres construir localmente
-    container_name: playwright-beyondup
+    container_name: playwright
     restart: unless-stopped
     working_dir: /app
     environment:
-      - BEYONDUP_USER=${BEYONDUP_USER}
-      - BEYONDUP_PASS=${BEYONDUP_PASS}
-      - BEYONDUP_URL=${BEYONDUP_URL}
+     # - BEYONDUP_USER=${BEYONDUP_USER}
+     # - BEYONDUP_PASS=${BEYONDUP_PASS}
+     # - BEYONDUP_URL=${BEYONDUP_URL}
       - HEADLESS=true
       - TIMEOUT=60000
       - MAX_RETRIES=3

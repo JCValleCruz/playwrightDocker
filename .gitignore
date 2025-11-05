@@ -1,0 +1,24 @@
+# Archivos de entorno
+.env
+
+# Imágenes Docker exportadas
+*.tar
+playwright-image.tar
+
+# Archivos temporales
+*.pyc
+__pycache__/
+*.log
+
+# Carpetas de datos locales
+logs/*
+!logs/.gitkeep
+reports/*
+!reports/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+sudo

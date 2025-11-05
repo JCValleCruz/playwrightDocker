@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
   playwright-service:
-    build: .
-    image: playwright:latest
+    image: ghcr.io/jcvallecruz/playwright:latest
+    # build: .  # Descomentar si quieres construir localmente
     container_name: playwright-beyondup
     restart: unless-stopped
     working_dir: /app
